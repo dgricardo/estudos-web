@@ -1,0 +1,20 @@
+<div class="grid p-fluid mt-2">
+  <div class="col-12 md:col-4">
+    <input type="text" pInputText [(ngModel)]="mensagem" />
+  </div>
+
+  <div class="col-12 md:col-2">
+    <button
+      pButton
+      type="button"
+      label="Enviar"
+      (click)="enviarMensagem()"
+    ></button>
+  </div>
+</div>
+
+<div class="mt-3">
+  <ul>
+    <li *ngFor="let mensagem of mensagens">{{ mensagem }}</li>
+  </ul>
+</div>

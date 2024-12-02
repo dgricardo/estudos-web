@@ -1,0 +1,14 @@
+<div style="margin-top: 50px">
+  <i
+    class="pi pi-bell mr-4 p-text-secondary"
+    pBadge
+    style="font-size: 2rem"
+    value="{{ qtdeNotificacoes }}"
+  >
+  </i>
+  <ul>
+    <li *ngFor="let notificacao of notificacoes">
+      {{ notificacao }}
+    </li>
+  </ul>
+</div>
